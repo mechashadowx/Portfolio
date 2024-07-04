@@ -1,0 +1,43 @@
+[
+    {
+        "name": "XIndicator",
+        "image": "/XIndicator.png",
+        "details": "A tool where you can build your custom trading indicator and back test it on stocks, cryptos, and NFTs.",
+        "techs": [
+            "nextjs",
+            "tailwindcss",
+            "daisyui",
+            "fastapi",
+            "auth0",
+            "aws",
+            "paddle"
+        ],
+        "source": "https://github.com/IndicatorTester?tab=repositories"
+    },
+    {
+        "name": "Handstore",
+        "image": "/Handstore.png",
+        "details": "A mobile application for talented people to share their handmade products, and for people who are interested in buying great handmade products. In other word, a special place for handmade products.",
+        "techs": ["figma"]
+    },
+    {
+        "name": "SpiderAlgo",
+        "image": "/SpiderAlgo.png",
+        "details": "The spider has to eat the ant using one of the following algorithms: DFS, BFS, A* and more or you can play as a spider.",
+        "techs": ["figma", "flutter"],
+        "source": "https://github.com/mechashadowx/AI-and-Flutter-Spider-Game-MVVM/tree/master"
+    },
+    {
+        "name": "MechaCoding",
+        "image": "/MechaCoding.png",
+        "details": "The spider has to eat the ant using one of the following algorithms: DFS, BFS, A* and more or you can play as a spider.",
+        "techs": ["figma", "cpp", "leetcode"],
+        "source": "https://www.instagram.com/mechacoding/"
+    },
+    {
+        "name": "A19",
+        "image": "/A19.png",
+        "details": "The spider has to eat the ant using one of the following algorithms: DFS, BFS, A* and more or you can play as a spider.",
+        "techs": ["figma", "html", "css"]
+    }
+]

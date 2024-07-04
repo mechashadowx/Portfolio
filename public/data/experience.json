@@ -1,0 +1,22 @@
+[
+    {
+        "company": "Amazon",
+        "companyUrl": "https://www.amazon.com/",
+        "position": "Software Development Engineer",
+        "date": "Aug • 2022 - Oct • 2023",
+        "details": [
+            "I have actively contributed to the development of the Exchange program, a prominent feature introduced by Amazon in India. This innovative program enables retail customers to exchange their old devices for new ones, while enjoying a discounted price on the new device.",
+            "I had the privilege of working on the XXL project, a large-scale endeavour that encompassed a wide range of services within Amazon. Throughout the project, I actively contributed to the development of various services, both customer-facing and partner-facing services for Amazon customers and partners.",
+            "The core work was Java back-end development, with AWS as cloud service."
+        ]
+    },
+    {
+        "company": "UniTicker",
+        "companyUrl": "https://www.tickerchart.com/en/",
+        "position": "Software Developer",
+        "date": "Aug • 2021 - Aug • 2022",
+        "details": [
+            "I have successfully improved a trading raw data processor by incorporating new functionalities. Additionally, I developed a Java Spring Boot-based mock API to rigorously test a highly sensitive feature."
+        ]
+    }
+]
