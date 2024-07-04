@@ -78,11 +78,10 @@ export default async function Projects() {
                             </div>
                             <div className="drop-shadow-2xl">
                                 <Image
-                                    src={`/projects${project.image}`}
+                                    src={`/Portfolio/projects${project.image}`}
                                     alt=""
                                     width={500}
                                     height={500}
-                                    style={{ width: "auto", height: "auto" }}
                                     className="rounded-2xl"
                                 />
                             </div>
