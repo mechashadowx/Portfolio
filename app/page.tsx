@@ -21,7 +21,11 @@ export default function Home() {
             <footer className="footer footer-center bg-neutral text-neutral-content p-6">
                 <aside>
                     <p className="font-bold text-lg">Mustafa Alsheikh</p>
-                    <a href="https://github.com/mechashadowx" className="hover:underline">Github</a>
+                    <div className="flex gap-4" >
+                        <a href="https://github.com/mechashadowx" className="hover:underline">Github</a>
+                        <p>•</p>
+                        <a href="./CV.pdf" className="hover:underline">Resume</a>
+                    </div>
                 </aside>
             </footer>
         </>
