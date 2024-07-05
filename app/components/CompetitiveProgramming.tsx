@@ -24,7 +24,7 @@ export default async function CompetitiveProgramming() {
                             key={index}
                             className="flex flex-col items-center gap-4"
                         >
-                            <p className="text-4xl text-center font-bold drop-shadow-md">
+                            <p className="text-5xl text-center font-bold drop-shadow-md">
                                 {contest.place}
                             </p>
                             <p className="text-lg italic text-center">
