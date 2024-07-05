@@ -1,3 +1,4 @@
+import CompetitiveProgramming from "./components/CompetitiveProgramming";
 import Divider from "./components/Divider";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
@@ -15,6 +16,8 @@ export default function Home() {
                     <Projects />
                     <Divider />
                     <Experience />
+                    <Divider />
+                    <CompetitiveProgramming />
                     <Divider />
                 </div>
             </div>
