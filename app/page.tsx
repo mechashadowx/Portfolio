@@ -3,6 +3,7 @@ import Divider from "./components/Divider";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 export default function Home() {
     return (
@@ -19,15 +20,24 @@ export default function Home() {
                     <Divider />
                     <CompetitiveProgramming />
                     <Divider />
+                    <Skills />
+                    <Divider />
                 </div>
             </div>
             <footer className="footer footer-center bg-neutral text-neutral-content p-6">
                 <aside>
                     <p className="font-bold text-lg">Mustafa Alsheikh</p>
-                    <div className="flex gap-4" >
-                        <a href="https://github.com/mechashadowx" className="hover:underline">Github</a>
+                    <div className="flex gap-4">
+                        <a
+                            href="https://github.com/mechashadowx"
+                            className="hover:underline"
+                        >
+                            Github
+                        </a>
                         <p>•</p>
-                        <a href="./CV.pdf" className="hover:underline">Resume</a>
+                        <a href="./CV.pdf" className="hover:underline">
+                            Resume
+                        </a>
                     </div>
                 </aside>
             </footer>
