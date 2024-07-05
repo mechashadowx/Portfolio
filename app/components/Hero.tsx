@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="grid place-items-center text-9xl drop-shadow-xl">
                 <p className={dancingScript.className}>Mustafa Alsheikh</p>
             </div>
-            <p className="text-2xl font-light drop-shadow-lg">
+            <p className="text-2xl font-light drop-shadow-lg text-gray-500">
                 Software Engineer & Problem Solver
             </p>
         </div>

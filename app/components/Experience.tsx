@@ -28,7 +28,7 @@ export default async function Experience() {
                             <p className="text-lg italic text-center">
                                 {e.date}
                             </p>
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-4  text-gray-500">
                                 {e.details.map((detail: any, index: number) => {
                                     return (
                                         <p key={index} className="text-lg">

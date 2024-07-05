@@ -53,7 +53,7 @@ export default async function Projects() {
                             <p className="text-4xl text-center drop-shadow-md">{`${
                                 index + 1
                             }. ${project.name}`}</p>
-                            <p className="text-xl text-center drop-shadow-sm">
+                            <p className="text-xl text-center drop-shadow-sm text-gray-500">
                                 {project.details}
                             </p>
                             <div className="flex gap-8 justify-center">
