@@ -19,7 +19,7 @@ body {
     font-weight: 700;
     text-decoration-line: underline;
     text-underline-offset: 2px;
-    transform: scale(1.2) rotate(2deg);
+    transform: scale(1.2) rotate(-2deg);
     color: #47edbb;
 }
 

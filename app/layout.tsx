@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import "tailwindcss/tailwind.css";
 import { Quicksand } from "next/font/google";
+import MeteorBackground from "./components/MeteorBackground";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" data-theme="dark">
-            <body className={`flex flex-col items-center px-3 ${quicksand.className}`}>{children}</body>
+            <body className={quicksand.className}>
+                <MeteorBackground />
+                <main className="flex flex-col items-center px-3 relative z-10">
+                    {children}
+                </main>
+            </body>
         </html>
     );
 }

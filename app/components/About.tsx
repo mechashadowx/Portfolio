@@ -37,7 +37,7 @@ const About = () => {
             </div>
             <div className="flex space-x-4 mt-4 items-center justify-center">
                 <p className="text-base sm:text-lg font-light">
-                    Mustafaitju@gmail.com
+                    Mustafaitju&#64;gmail.com
                 </p>
                 <FontAwesomeIcon
                     className="h-4 w-4 text-gray-700 hover:text-[aliceblue] transition-all hover:cursor-pointer"
