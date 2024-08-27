@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     return (
         <div
             id="navbar"
-            className="my-6 flex gap-12 p-3 flex-wrap items-center justify-center"
+            className="mb-6 flex gap-12 p-3 flex-wrap items-center justify-center"
         >
             {pages.map((page, index) => (
                 <Link href={page.path} key={index} passHref>

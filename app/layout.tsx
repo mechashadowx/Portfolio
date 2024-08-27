@@ -20,7 +20,7 @@ export default function RootLayout({
         <html lang="en" data-theme="dark">
             <body className={quicksand.className}>
                 <MeteorBackground />
-                <main className="flex flex-col items-center px-3 relative z-10">
+                <main className="py-6 flex flex-col items-center px-5 relative z-10 min-h-screen">
                     <Navbar />
                     {children}
                 </main>
