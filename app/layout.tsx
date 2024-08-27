@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import "tailwindcss/tailwind.css";
 import { Quicksand } from "next/font/google";
 import MeteorBackground from "./components/MeteorBackground";
+import Navbar from "./components/Navbar";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
             <body className={quicksand.className}>
                 <MeteorBackground />
                 <main className="flex flex-col items-center px-3 relative z-10">
+                    <Navbar />
                     {children}
                 </main>
             </body>

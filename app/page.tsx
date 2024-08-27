@@ -1,10 +1,8 @@
-import About from "./components/About";
-import Navbar from "./components/Navbar";
+import About from "./about/page";
 
 export default function Home() {
     return (
         <>
-            <Navbar opened="About" />
             <About />
         </>
     );

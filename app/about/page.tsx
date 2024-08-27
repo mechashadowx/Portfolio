@@ -30,12 +30,13 @@ const About = () => {
             </div>
             <div className="max-w-5xl text-lg sm:text-xl font-bold">
                 <p>
-                    Known for his technical prowess, adaptability, and strong
-                    sense of ownership, Mustafa consistently delivers
-                    high-quality work and supports his team members.
+                    <span className="text-2xl sm:text-3xl">&rdquo;</span> Known
+                    for his technical prowess, adaptability, and strong sense of
+                    ownership, Mustafa consistently delivers high-quality work
+                    and supports his team members.
                 </p>
             </div>
-            <div className="flex space-x-4 mt-4 items-center justify-center">
+            <div className="flex space-x-4 items-center justify-center">
                 <p className="text-base sm:text-lg font-light">
                     Mustafaitju&#64;gmail.com
                 </p>
@@ -56,7 +57,7 @@ const About = () => {
                     }}
                 />
             </div>
-            <div className="mt-4 flex gap-8">
+            <div className="flex gap-8">
                 <a
                     href="https://github.com/mechashadowx"
                     target="_blank"
