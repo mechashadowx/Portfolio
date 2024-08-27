@@ -24,12 +24,12 @@ const MeteorBackground: React.FC = () => {
 
         // Meteor class
         class Meteor {
-            x: number;
-            y: number;
-            length: number;
-            speed: number;
-            opacity: number;
-            fade: boolean;
+            x: number = 100;
+            y: number = 0;
+            length: number = 10;
+            speed: number = 2;
+            opacity: number = 0.1;
+            fade: boolean = false;
 
             constructor() {
                 this.reset();
@@ -45,6 +45,8 @@ const MeteorBackground: React.FC = () => {
             }
 
             draw() {
+                if (!ctx) return;
+
                 ctx.beginPath();
                 ctx.moveTo(this.x, this.y);
                 ctx.lineTo(this.x + this.length, this.y + this.length);
@@ -76,6 +78,8 @@ const MeteorBackground: React.FC = () => {
         }
 
         function animate() {
+            if (!ctx) return;
+
             ctx.fillStyle = "#1d232a";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
