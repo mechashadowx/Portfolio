@@ -2,22 +2,26 @@
 
 import jQuery from "jquery";
 import { useState } from "react";
-import About from "./about/About";
+import Home from "./home/Home";
 import Experience from "./experience/Experience";
 import Achievements from "./achievements/Achievements";
 import Projects from "./projects/Projects";
 
-export default function Home() {
-    const pages = [
-        "Projects",
-        "Experience",
-        "Achievements",
-        "About",
+type Page = {
+    name: string;
+    component: JSX.Element;
+};
+
+export default function App() {
+    const pages: Page[] = [
+        { name: "Home", component: <Home /> },
+        { name: "Projects", component: <Projects /> },
+        { name: "Experience", component: <Experience /> },
+        { name: "Achievements", component: <Achievements /> },
     ];
-    const views = [<Projects />, <Experience />, <Achievements />, <About />];
 
     const $ = jQuery;
-    const [pageId, setPageId] = useState(pages.length - 1);
+    const [pageId, setPageId] = useState(0);
 
     async function changePage(id: number) {
         $("#view").css({
@@ -48,7 +52,7 @@ export default function Home() {
                         }`}
                         onClick={() => changePage(index)}
                     >
-                        {page}
+                        {page.name}
                     </p>
                 ))}
             </div>
@@ -56,7 +60,7 @@ export default function Home() {
                 id="view"
                 className="flex transition-all duration-500 ease-in-out flex-grow"
             >
-                {views[pageId]}
+                {pages[pageId].component}
             </div>
         </>
     );

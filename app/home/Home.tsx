@@ -2,15 +2,15 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faCopy, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-const About = () => {
+const Home = () => {
     const [copied, setCopied] = useState(false);
 
     return (
         <div
-            id="about"
+            id="home"
             className="mt-16 sm:mt-32 flex flex-col space-y-8 items-center text-center"
         >
             <div className="text-6xl sm:text-8xl font-bold leading-tight">
@@ -45,27 +45,7 @@ const About = () => {
                     team members.
                 </p>
             </div>
-            <div className="flex space-x-4 items-center justify-center">
-                <p className="text-base sm:text-lg font-light">
-                    Mustafaitju&#64;gmail.com
-                </p>
-                <FontAwesomeIcon
-                    className="h-4 w-4 text-gray-700 hover:text-[aliceblue] transition-all hover:cursor-pointer"
-                    icon={copied ? faCheck : faCopy}
-                    size="2x"
-                    onClick={() => {
-                        navigator.clipboard
-                            .writeText("Mustafaitju@gmail.com")
-                            .then(() => {
-                                setCopied(true);
-                                setTimeout(() => setCopied(false), 5000); // Reset copied status after 2 seconds
-                            })
-                            .catch((err) => {
-                                console.error("Failed to copy text: ", err);
-                            });
-                    }}
-                />
-            </div>
+            <div></div>
             <div className="flex gap-8">
                 <a
                     href="https://github.com/mechashadowx"
@@ -91,9 +71,21 @@ const About = () => {
                         size="2x"
                     />
                 </a>
+                <a
+                    href="./CV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-[aliceblue] transition-all"
+                >
+                    <FontAwesomeIcon
+                        className="h-6 w-6"
+                        icon={faFileArrowDown}
+                        size="2x"
+                    />
+                </a>
             </div>
         </div>
     );
 };
 
-export default About;
+export default Home;
