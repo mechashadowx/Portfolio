@@ -5,16 +5,16 @@ import { useState } from "react";
 import About from "./about/About";
 import Experience from "./experience/Experience";
 import Achievements from "./achievements/Achievements";
+import Projects from "./projects/Projects";
 
 export default function Home() {
     const pages = [
         "Projects",
         "Experience",
         "Achievements",
-        "Feedback",
         "About",
     ];
-    const views = [<About />, <Experience />, <Achievements />, <About />, <About />];
+    const views = [<Projects />, <Experience />, <Achievements />, <About />];
 
     const $ = jQuery;
     const [pageId, setPageId] = useState(pages.length - 1);

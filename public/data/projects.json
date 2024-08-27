@@ -1,5 +1,19 @@
 [
     {
+        "name": "Portfolio",
+        "image": "/Portfolio.png",
+        "details": "I built my custom portfolio from A to Z.",
+        "techs": ["nextjs", "tailwindcss", "daisyui"],
+        "source": "https://mechashadowx.github.io/Portfolio/"
+    },
+    {
+        "name": "Infinite Toolkit",
+        "image": "/Infinite Toolkit.png",
+        "details": "This is a toolkit browser extension which contains +20 tools of daily used tools by tech people.",
+        "techs": ["html", "css"],
+        "source": "https://mechashadowx.github.io/infinite-toolkit/"
+    },
+    {
         "name": "XIndicator",
         "image": "/XIndicator.png",
         "details": "I created a fully functional SaaS from user sign up to user payment, which was a tool where you can build your custom trading indicator and back test it on stocks, cryptos, and NFTs.",
@@ -12,7 +26,7 @@
             "aws",
             "paddle"
         ],
-        "source": "https://github.com/IndicatorTester?tab=repositories"
+        "source": "https://github.com/mechashadowx/XIndicator"
     },
     {
         "name": "Handstore",

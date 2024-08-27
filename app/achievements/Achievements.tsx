@@ -12,8 +12,8 @@ const Achievements = () => {
             <div className="text-lg sm:text-xl">
                 <p>
                     I was part of many competitive programming contests as
-                    participated, problem writer, judge, and trainer. I solved{" "}
-                    <span className="inline-grid font-bold">
+                    participant, problem writer, judge, and trainer. I solved{" "}
+                    <span className="inline-grid font-bold text-xl sm:text-2xl">
                         <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text blur-xl opacity-90 gradient-animation">
                             +1000
                         </span>
