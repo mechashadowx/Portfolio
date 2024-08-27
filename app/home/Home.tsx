@@ -1,13 +1,8 @@
-"use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 
 const Home = () => {
-    const [copied, setCopied] = useState(false);
-
     return (
         <div
             id="home"
