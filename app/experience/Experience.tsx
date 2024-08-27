@@ -17,7 +17,7 @@ const Experience = () => {
     async function move(direction: number) {
         $("#experience-details").css({
             opacity: 0,
-            transform: "scale(0.5)",
+            transform: "scale(0.8)",
         });
         await new Promise((resolve) => {
             setTimeout(resolve, 500);

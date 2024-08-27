@@ -32,8 +32,17 @@ const About = () => {
                 <p>
                     <span className="text-2xl sm:text-3xl">&rdquo;</span> Known
                     for his technical prowess, adaptability, and strong sense of
-                    ownership, Mustafa consistently delivers high-quality work
-                    and supports his team members.
+                    ownership,{" "}
+                    <span className="inline-grid">
+                        <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text blur-xl opacity-90 gradient-animation">
+                            Mustafa
+                        </span>
+                        <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text gradient-animation">
+                            Mustafa
+                        </span>
+                    </span>{" "}
+                    consistently delivers high-quality work and supports his
+                    team members.
                 </p>
             </div>
             <div className="flex space-x-4 items-center justify-center">
