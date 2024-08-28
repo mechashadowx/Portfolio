@@ -73,7 +73,7 @@ const MeteorBackground: React.FC = () => {
         }
 
         const meteors: Meteor[] = [];
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 20; i++) {
             meteors.push(new Meteor());
         }
 
