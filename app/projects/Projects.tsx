@@ -70,16 +70,14 @@ const Projects = () => {
                                     (tech: string, index: number) => {
                                         return (
                                             <a
+                                                key={index}
                                                 href={
                                                     (techs as any)[tech] ?? ""
                                                 }
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
-                                                <div
-                                                    key={index}
-                                                    className="h-6 w-6 drop-shadow-lg flex items-center hover:rotate-12 transition-all duration-150 ease-in-out"
-                                                >
+                                                <div className="h-6 w-6 drop-shadow-lg flex items-center hover:rotate-12 transition-all duration-150 ease-in-out">
                                                     <Image
                                                         priority
                                                         src={logoMapping.get(
@@ -87,7 +85,6 @@ const Projects = () => {
                                                         )}
                                                         alt=""
                                                         width={24}
-                                                        height={24}
                                                     />
                                                 </div>
                                             </a>
