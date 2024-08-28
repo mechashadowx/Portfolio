@@ -17,10 +17,10 @@ const Experience = () => {
     async function move(direction: number) {
         $("#experience-details").css({
             opacity: 0,
-            transform: "scale(0.8)",
+            transform: "translateY(-20px)",
         });
         await new Promise((resolve) => {
-            setTimeout(resolve, 500);
+            setTimeout(resolve, 600);
         });
         setExperienceId(
             (((experienceId + direction) % data.length) + data.length) %
@@ -28,7 +28,7 @@ const Experience = () => {
         );
         $("#experience-details").css({
             opacity: 1,
-            transform: "scale(1)",
+            transform: "scale(1) translateY(0)",
         });
     }
 
@@ -85,6 +85,29 @@ const Experience = () => {
                         move(-1);
                     }}
                 />
+                <div className="flex gap-6">
+                    {data.map((e: any, index: number) => {
+                        return (
+                            <div
+                                key={index}
+                                className="text-4xl sm:text-5xl font-bold"
+                            >
+                                {index === experienceId ? (
+                                    <span className="inline-grid">
+                                        <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text blur-xl opacity-90 gradient-animation">
+                                            •
+                                        </span>
+                                        <span className="relative col-start-1 row-start-1 bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text gradient-animation">
+                                            •
+                                        </span>
+                                    </span>
+                                ) : (
+                                    <span className="text-gray-700">•</span>
+                                )}
+                            </div>
+                        );
+                    })}
+                </div>
                 <FontAwesomeIcon
                     className="h-6 w-6 text-gray-500 hover:text-[aliceblue] transition-all hover:cursor-pointer"
                     icon={faArrowCircleRight}

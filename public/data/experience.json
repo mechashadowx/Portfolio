@@ -16,7 +16,9 @@
         "position": "Software Developer",
         "date": "Aug • 2021 - Aug • 2022",
         "details": [
-            "I have successfully improved a trading raw data processor by incorporating new functionalities. Additionally, I developed a Java Spring Boot-based mock API to rigorously test a highly sensitive feature."
+            "I have successfully improved a trading raw data processor by incorporating new functionalities. Additionally, I developed a Java Spring Boot-based mock API to rigorously test a highly sensitive feature.",
+            "I was responsible for managing AWS resources. I improved the infrastructure and solved problems that the company was struggling to solve for years.",
+            "I worked with minimal help from other teammates even through I was a fresh graduate."
         ]
     }
 ]
