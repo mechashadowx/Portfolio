@@ -1,0 +1,16 @@
+{
+    "nextjs": "https://nextjs.org/",
+    "tailwindcss": "https://tailwindcss.com/",
+    "daisyui": "https://daisyui.com/",
+    "html": "https://en.wikipedia.org/wiki/HTML",
+    "css": "https://en.wikipedia.org/wiki/CSS",
+    "javascript": "https://en.wikipedia.org/wiki/JavaScript",
+    "fastapi": "https://fastapi.tiangolo.com/",
+    "auth0": "https://auth0.com/",
+    "aws": "https://aws.amazon.com/",
+    "paddle": "https://www.paddle.com/",
+    "figma": "https://www.figma.com/",
+    "flutter": "https://flutter.dev/",
+    "cpp": "https://cplusplus.com/",
+    "leetcode": "https://leetcode.com/"
+}

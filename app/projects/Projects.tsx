@@ -1,4 +1,5 @@
-import data from "@/public/data/projects.json";
+import projects from "@/public/data/projects.json";
+import techs from "@/public/data/techs.json";
 import Image from "next/image";
 import nextjs from "@/public/logos/next-js.svg";
 import tailwindcss from "@/public/logos/tailwindcss.svg";
@@ -39,7 +40,7 @@ const Projects = () => {
             className="max-w-5xl mt-4 sm:mt-8 flex flex-col space-y-8 items-center text-center"
         >
             <div className="flex flex-col items-center gap-12">
-                {data.map((project: any, index: number) => {
+                {projects.map((project: any, index: number) => {
                     return (
                         <div
                             key={index}
@@ -68,18 +69,28 @@ const Projects = () => {
                                 {project.techs.map(
                                     (tech: string, index: number) => {
                                         return (
-                                            <div
-                                                key={index}
-                                                className="h-6 w-6 drop-shadow-lg flex items-center"
+                                            <a
+                                                href={
+                                                    (techs as any)[tech] ?? ""
+                                                }
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                             >
-                                                <Image
-                                                    priority
-                                                    src={logoMapping.get(tech)}
-                                                    alt=""
-                                                    width={24}
-                                                    height={24}
-                                                />
-                                            </div>
+                                                <div
+                                                    key={index}
+                                                    className="h-6 w-6 drop-shadow-lg flex items-center hover:rotate-12 transition-all duration-150 ease-in-out"
+                                                >
+                                                    <Image
+                                                        priority
+                                                        src={logoMapping.get(
+                                                            tech
+                                                        )}
+                                                        alt=""
+                                                        width={24}
+                                                        height={24}
+                                                    />
+                                                </div>
+                                            </a>
                                         );
                                     }
                                 )}
