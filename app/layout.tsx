@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" data-theme="dark">
+            <head>
+                <link rel="icon" href="/Portfolio/favicon.svg" />
+            </head>
             <body className={quicksand.className}>
                 <MeteorBackground />
                 <main className="py-6 flex flex-col items-center px-5 relative z-10 min-h-screen">

@@ -10,7 +10,7 @@
         "name": "Infinite Toolkit",
         "image": "/Infinite Toolkit.png",
         "details": "This is a toolkit browser extension which contains +20 tools of daily used tools by tech people.",
-        "techs": ["html", "css"],
+        "techs": ["html", "css", "javascript"],
         "source": "https://mechashadowx.github.io/infinite-toolkit/"
     },
     {

@@ -13,6 +13,7 @@ import cpp from "@/public/logos/cpp.svg";
 import leetcode from "@/public/logos/leetcode.svg";
 import html from "@/public/logos/html.svg";
 import css from "@/public/logos/css.svg";
+import javascript from "@/public/logos/javascript.svg";
 
 const Projects = () => {
     const logoMapping = new Map<string, any>([
@@ -29,6 +30,7 @@ const Projects = () => {
         ["leetcode", leetcode],
         ["html", html],
         ["css", css],
+        ["javascript", javascript],
     ]);
 
     return (
