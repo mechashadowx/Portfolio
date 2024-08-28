@@ -25,7 +25,7 @@ const MeteorBackground: React.FC = () => {
         // Meteor class
         class Meteor {
             x: number = 100;
-            y: number = 0;
+            y: number = 100;
             length: number = 10;
             speed: number = 2;
             opacity: number = 0.1;
@@ -37,7 +37,7 @@ const MeteorBackground: React.FC = () => {
 
             reset() {
                 this.x = Math.random() * canvas.width;
-                this.y = 0;
+                this.y = Math.random() * (canvas.height / 2);
                 this.length = Math.random() * 80 + 10;
                 this.speed = Math.random() * 2 + 2;
                 this.opacity = 0.1;
